@@ -248,7 +248,7 @@ type GetOrderStatusParams struct {
 
 // GetOrderStatusResult http://47.110.246.50:6524/docs/qzt/qzt-1ekbcl771rsu6
 type GetOrderStatusResult struct {
-	OrderNo            string        `json:"order_no"`                       // 订单编号 TODO 接口返回为数字
+	OrderNo            string        `json:"order_no"`                       // 订单编号
 	OrderStatus        int           `json:"order_status"`                   // 订单状态
 	OutOrderNo         string        `json:"out_order_no"`                   // 商户订单号
 	Amount             int           `json:"amount"`                         // 金额
