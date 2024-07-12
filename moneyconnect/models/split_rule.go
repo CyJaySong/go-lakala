@@ -1,5 +1,7 @@
 package models
 
+import "encoding/json"
+
 type SplitRuleData struct {
 	RuleId    string                `json:"rule_id,omitempty"` // 规则ID
 	Params    map[string]string     `json:"params,omitempty"`  // 规则中的参数值:{"参数1":"1000","参数2":"1000"}
@@ -90,9 +92,9 @@ type GetSplitRuleResult struct {
 }
 
 type EvaluateSplitRules struct {
-	RuleId  string            `json:"rule_id"` // 规则ID
-	Params  map[string]int    `json:"params"`  // 规则中的参数值 // TODO
-	Members map[string]string `json:"members"` // 分账参与方在规则中的角色
+	RuleId  string                 `json:"rule_id"` // 规则ID
+	Params  map[string]json.Number `json:"params"`  // 规则中的参数值,数字字符串,可以是整数和小数
+	Members map[string]string      `json:"members"` // 分账参与方在规则中的角色
 }
 
 // EvaluateSplitRuleParams http://47.110.246.50:6524/docs/qzt/qzt-1che8otbrihmi
