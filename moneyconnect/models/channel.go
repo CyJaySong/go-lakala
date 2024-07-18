@@ -29,7 +29,7 @@ type GetMemberTransferPayAccountResult struct {
 
 // GetUnionPayUserIdParams http://47.110.246.50:6524/docs/qzt/qzt-1ekbcuoggq19p
 type GetUnionPayUserIdParams struct {
-	MemberMerchantID  string `json:"member_merchant_id"`  // 钱账通商户编号,必选
+	MemberMerchantId  string `json:"member_merchant_id"`  // 钱账通商户编号,必选
 	ThirdPartyPayment string `json:"third_party_payment"` // 三方渠道,如"UNIONPAY",必选
 	UserAuthCode      string `json:"user_auth_code"`      // 用户授权码,必选
 	AppUpIdentifier   string `json:"app_up_identifier"`   // 支付标识,可选
@@ -37,5 +37,5 @@ type GetUnionPayUserIdParams struct {
 
 // GetUnionPayUserIdResult http://47.110.246.50:6524/docs/qzt/qzt-1ekbcuoggq19p
 type GetUnionPayUserIdResult struct {
-	OpenID string `json:"openid"` // openid,必选
+	OpenId string `json:"openid"` // openid,必选
 }

@@ -122,7 +122,7 @@ type OrderWithdrawRequestEvent struct {
 	Amount         int    `json:"amount"`                     // 提现金额(含平台手续费),单位:分
 	BillingFee     int    `json:"billing_fee"`                // 平台手续费,单位:分
 	ChannelFee     int    `json:"channel_fee,omitempty"`      // 渠道手续费,单位:分
-	BankCardID     string `json:"bank_card_id"`               // 绑定银行卡的编号
+	BankCardId     string `json:"bank_card_id"`               // 绑定银行卡的编号
 	ChannelTradeNo string `json:"channel_trade_no,omitempty"` // 渠道交易流水号
 	WithdrawType   string `json:"withdraw_type"`              // 提现方式,T0:T+0到账,T1:T+1到账
 	Remark         string `json:"remark,omitempty"`           // 备注
@@ -225,7 +225,7 @@ type PosTradeNotifyEvent struct {
 	Amount            int    `json:"amount"`                        // 交易金额,单位:分
 	MerchantNo        string `json:"merchant_no"`                   // 商户号
 	TerminalNo        string `json:"terminal_no"`                   // 终端号
-	TransactionID     string `json:"transaction_id"`                // POS交易通道返回流水号
+	TransactionId     string `json:"transaction_id"`                // POS交易通道返回流水号
 	ThirdPartyPayment string `json:"third_party_payment,omitempty"` // 三方支付渠道,微信:WECHAT,支付宝:ALIPAY,借记卡:DEBIT_CARD,贷记卡:CREDIT_CARD,银联二维码借记:UNION_DEBIT_CARD,银联二维码贷记:UNION_CREDIT_CARD
 	Batchbillno       string `json:"batchbillno"`                   // POS批次号
 	Systraceno        string `json:"systraceno"`                    // POS凭证号

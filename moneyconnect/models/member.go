@@ -149,13 +149,13 @@ type QueryMemberChannelRealParams struct {
 	MemberNo   string `json:"member_no"`            // 会员标识
 	MerchantNo string `json:"merchant_no"`          // 会员商户标识
 	RealType   string `json:"real_type"`            // 实名类型;WXZF:代表微信,ZFBZF:代表支付宝
-	SubMchID   string `json:"sub_mch_id"`           // 子商户号
-	ChannelID  string `json:"channel_id,omitempty"` // 渠道ID,可选
+	SubMchId   string `json:"sub_mch_id"`           // 子商户号
+	ChannelId  string `json:"channel_id,omitempty"` // 渠道ID,可选
 }
 
 // QueryMemberChannelRealResult http://47.110.246.50:6524/docs/qzt/qzt-1em3jgq8h8pqc
 type QueryMemberChannelRealResult struct {
-	ApplymentID     string `json:"applymentId"`               // 申请编号
+	ApplymentId     string `json:"applymentId"`               // 申请编号
 	ApplymentState  string `json:"applymentState"`            // 申请状态
 	AuthorizeState  string `json:"authorizeState"`            // 认证状态
 	RegisterChannel string `json:"registerChannel"`           // 报备通道

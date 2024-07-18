@@ -16,7 +16,7 @@ type ConsumeParamsPayMethod struct {
 
 type ConsumeParamsPayMethodBySCAN struct {
 	BarCode           string `json:"bar_code"`                       // 条码
-	SubAppID          string `json:"app_id,omitempty"`               // 子商户公众账号ID的sub_appid
+	SubAppId          string `json:"app_id,omitempty"`               // 子商户公众账号ID的sub_appid
 	Amount            int    `json:"amount"`                         // 支付金额,单位:分
 	Subject           string `json:"subject,omitempty"`              // 订单标题(非必填)
 	ChannelType       string `json:"channel_type,omitempty"`         // 渠道(非必填)
@@ -30,8 +30,8 @@ type ConsumeParamsPayMethodBySCAN struct {
 
 type ConsumeParamsPayMethodByJSAPI struct {
 	Amount          int                                        `json:"amount"`                    // 支付金额,单位:分
-	MchAppID        string                                     `json:"mch_appid"`                 // 必填,微信/支付宝/云闪付的appid
-	OpenID          string                                     `json:"openid"`                    // 付款人ID,微信:openid,支付宝:buyer_id,云闪付:user_id
+	MchAppId        string                                     `json:"mch_appid"`                 // 必填,微信/支付宝/云闪付的appid
+	OpenId          string                                     `json:"openid"`                    // 付款人ID,微信:openid,支付宝:buyer_id,云闪付:user_id
 	Mode            string                                     `json:"mode"`                      // 支付宝:alipay,微信:wxpay,银联:unionpay
 	Subject         string                                     `json:"subject,omitempty"`         // 订单标题(非必填)
 	ChannelType     string                                     `json:"channel_type,omitempty"`    // 渠道(非必填)
@@ -47,7 +47,7 @@ type ConsumeParamsPayMethodByJSAPI struct {
 }
 
 type ConsumeParamsPayMethodByJsapiGoodsDetail struct {
-	GoodsID       string  `json:"goods_id"`                 // 商品编号
+	GoodsId       string  `json:"goods_id"`                 // 商品编号
 	GoodsName     string  `json:"goods_name"`               // 商品名称
 	Spec          string  `json:"spec,omitempty"`           // 商品规格
 	Quantity      int     `json:"quantity"`                 // 数量

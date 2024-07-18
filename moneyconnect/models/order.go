@@ -91,8 +91,8 @@ type OrderConsumeResult struct {
 	ChannelSeqNo           string                `json:"channel_seq_no,omitempty"`             // 渠道支付流水号(收单),支付完成返回
 	PayChannelTradeNo      string                `json:"pay_channel_trade_no,omitempty"`       // 支付通道交易流水号(支付宝、微信),支付完成返回
 	ThirdPartyPayment      string                `json:"third_party_payment,omitempty"`        // 三方支付渠道,交易完成返回,微信:WECHAT,支付宝:ALIPAY
-	OpenID                 string                `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
-	SubOpenID              string                `json:"sub_open_id,omitempty"`                // 微信子appid的openid
+	OpenId                 string                `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
+	SubOpenId              string                `json:"sub_open_id,omitempty"`                // 微信子appid的openid
 	PayTime                string                `json:"pay_time,omitempty"`                   // 支付时间,yyyy-MM-dd HH:mm:ss
 }
 
@@ -120,8 +120,8 @@ type OrderConsumePayResult struct {
 	ChannelSeqNo           string  `json:"channel_seq_no,omitempty"`             // 渠道支付流水号(收单),支付完成返回
 	PayChannelTradeNo      string  `json:"pay_channel_trade_no,omitempty"`       // 支付通道交易流水号(支付宝、微信),支付完成返回
 	ThirdPartyPayment      string  `json:"third_party_payment,omitempty"`        // 三方支付渠道,交易完成返回,微信:WECHAT,支付宝:ALIPAY
-	OpenID                 string  `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
-	SubOpenID              string  `json:"sub_open_id,omitempty"`                // 微信子appId的openid
+	OpenId                 string  `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
+	SubOpenId              string  `json:"sub_open_id,omitempty"`                // 微信子appId的openid
 	PayTime                string  `json:"pay_time,omitempty"`                   // 支付时间,yyyy-MM-dd HH:mm:ss
 }
 
@@ -153,8 +153,8 @@ type OrderConsumeBatchPayResult struct {
 	ChannelSeqNo           string  `json:"channel_seq_no,omitempty"`             // 渠道支付流水号(收单),支付完成返回
 	PayChannelTradeNo      string  `json:"pay_channel_trade_no,omitempty"`       // 支付通道交易流水号(支付宝、微信),支付完成返回
 	ThirdPartyPayment      string  `json:"third_party_payment,omitempty"`        // 三方支付渠道,交易完成返回,微信:WECHAT,支付宝:ALIPAY
-	OpenID                 string  `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
-	SubOpenID              string  `json:"sub_open_id,omitempty"`                // 微信子appId的openid
+	OpenId                 string  `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
+	SubOpenId              string  `json:"sub_open_id,omitempty"`                // 微信子appId的openid
 	PayTime                string  `json:"pay_time,omitempty"`                   // 支付时间,yyyy-MM-dd HH:mm:ss
 }
 
