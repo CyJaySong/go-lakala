@@ -53,5 +53,5 @@ type UpdateMemberBankCardContactParams struct {
 // UpdateMemberBankCardContactResult http://47.110.246.50:6524/docs/qzt/qzt-1d4raqih9j0lc
 type UpdateMemberBankCardContactResult struct {
 	MemberNo string `json:"member_no"` // 会员号
-	CardNo   string `json:"card_no"`   // 银行卡编号
+	CardId   string `json:"card_no"`   // 银行卡编号
 }

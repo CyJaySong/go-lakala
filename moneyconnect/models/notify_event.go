@@ -7,7 +7,7 @@ type MemberOpenEvent struct {
 	Mobile      string `json:"mobile"`                 // 手机号
 	MemberState int    `json:"member_state,omitempty"` // 会员状态,http://47.110.246.50:6524/docs/qzt/qzt-1d50j2f4efqcs
 	MemberType  int    `json:"member_type,omitempty"`  // 会员类型,http://47.110.246.50:6524/docs/qzt/qzt-1d50iu3jl96p8
-	CardNo      string `json:"card_no,omitempty"`      // 银行卡编号
+	CardId      string `json:"card_no,omitempty"`      // 银行卡编号
 	ErrMsg      string `json:"err_msg,omitempty"`      // 错误信息
 }
 
@@ -49,7 +49,7 @@ type MemberMerchantOpenEvent struct {
 type MemberBankCardEvent struct {
 	MemberNo        string `json:"member_no"`                   // 会员编号
 	OperateType     int    `json:"operate_type"`                // 操作类型,1:绑卡,2:解绑,3:设置结算卡
-	CardNo          string `json:"card_no"`                     // 银行卡编号
+	CardId          string `json:"card_no"`                     // 银行卡编号
 	IdentityNo      string `json:"identity_no,omitempty"`       // 证件号码,RSA加密
 	BankCardNo      string `json:"bank_card_no,omitempty"`      // 银行卡号,掩码
 	Mobile          string `json:"mobile,omitempty"`            // 银行预留手机号

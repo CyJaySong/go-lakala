@@ -39,7 +39,7 @@ type WithdrawParams struct {
 	SpecialAccountType string `json:"special_account_type"`    // 专用账户类型编码
 	Amount             int    `json:"amount"`                  // 提现金额(含平台手续费),单位:分
 	BillingFee         int    `json:"billing_fee"`             // 平台手续费,单位:分
-	BankCardNo         string `json:"bank_card_no"`            // 钱账通绑定银行卡的编号
+	BankCardId         string `json:"bank_card_no"`            // 钱账通绑定银行卡的编号
 	WithdrawType       string `json:"withdraw_type,omitempty"` // 提现方式,D0:D0提现,T1:T1提现,D1:D1提现,默认T1提现
 	FrontUrl           string `json:"front_url,omitempty"`     // 前台通知地址
 	BackUrl            string `json:"back_url"`                // 后台通知地址

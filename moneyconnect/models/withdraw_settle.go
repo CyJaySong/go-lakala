@@ -13,7 +13,7 @@ type MemberSettleRecord struct {
 // SetMemberWithdrawSettleCardParams http://47.110.246.50:6524/docs/qzt/qzt-1ep0llqtitpnu
 type SetMemberWithdrawSettleCardParams struct {
 	MemberNo string `json:"member_no"` // 会员标识
-	CardNo   string `json:"card_no"`   // 银行卡编号
+	CardId   string `json:"card_no"`   // 银行卡编号
 }
 
 // SetMemberWithdrawSettleCardResult http://47.110.246.50:6524/docs/qzt/qzt-1ep0llqtitpnu
