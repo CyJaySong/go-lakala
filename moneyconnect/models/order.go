@@ -94,8 +94,6 @@ type OrderConsumeResult struct {
 	OpenID                 string                `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
 	SubOpenID              string                `json:"sub_open_id,omitempty"`                // 微信子appid的openid
 	PayTime                string                `json:"pay_time,omitempty"`                   // 支付时间,yyyy-MM-dd HH:mm:ss
-	ConfirmURL             string                `json:"confirm_url,omitempty"`                // 密码确认的URL地址,网关支付时返回
-	IsConfirm              bool                  `json:"is_confirm,omitempty"`                 // 是否需要确认
 }
 
 // OrderConsumePayParams http://47.110.246.50:6524/docs/qzt/qzt-1ekbcfiauedbj
@@ -125,8 +123,6 @@ type OrderConsumePayResult struct {
 	OpenID                 string  `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
 	SubOpenID              string  `json:"sub_open_id,omitempty"`                // 微信子appId的openid
 	PayTime                string  `json:"pay_time,omitempty"`                   // 支付时间,yyyy-MM-dd HH:mm:ss
-	ConfirmURL             string  `json:"confirm_url,omitempty"`                // 密码确认的URL地址,网关支付时返回
-	IsConfirm              bool    `json:"is_confirm"`                           // 是否需要确认
 }
 
 // OrderConsumeBatchPayParams http://47.110.246.50:6524/docs/qzt/qzt-1ekbchps1ckgp
@@ -160,8 +156,6 @@ type OrderConsumeBatchPayResult struct {
 	OpenID                 string  `json:"open_id,omitempty"`                    // 微信/支付宝/云闪付的openid
 	SubOpenID              string  `json:"sub_open_id,omitempty"`                // 微信子appId的openid
 	PayTime                string  `json:"pay_time,omitempty"`                   // 支付时间,yyyy-MM-dd HH:mm:ss
-	ConfirmURL             string  `json:"confirm_url,omitempty"`                // 密码确认的URL地址,网关支付时返回
-	IsConfirm              bool    `json:"is_confirm"`                           // 是否需要确认
 }
 
 // OrderActionConfirmParams http://47.110.246.50:6524/docs/qzt/qzt-1ekbcpiggemfj
