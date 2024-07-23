@@ -2,8 +2,8 @@ package models
 
 // BankCardInfo 单个银行卡信息的结构体 http://47.110.246.50:6524/docs/qzt/qzt-1d50jk2k3qsoi
 type BankCardInfo struct {
-	CardNo          string `json:"card_no"`           // 银行卡号,带掩码
 	CardId          string `json:"card_id"`           // 银行卡标识
+	CardNo          string `json:"card_no"`           // 银行卡号,带掩码
 	IsSettleCard    bool   `json:"is_settle_card"`    // 是否是结算卡,true/false
 	BankCode        string `json:"bank_code"`         // 银行代码,http://47.110.246.50:6524/attach_files/qzt/277
 	BankCodeEn      string `json:"bank_code_en"`      // 银行简称

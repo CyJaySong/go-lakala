@@ -292,8 +292,8 @@ type GetOrderRefundStatusResult struct {
 
 // GetOrderDetailInfoParams http://47.110.246.50:6524/docs/qzt/qzt-1ekbcnqllsto1
 type GetOrderDetailInfoParams struct {
-	OrderNo    string `json:"order_no"`     // 订单编号
-	OutOrderNo string `json:"out_order_no"` // 平台订单号
+	OrderNo    string `json:"order_no,omitempty"`     // 订单编号
+	OutOrderNo string `json:"out_order_no,omitempty"` // 平台订单号
 }
 
 // GetOrderDetailInfoResult http://47.110.246.50:6524/docs/qzt/qzt-1ekbcnqllsto1
@@ -342,7 +342,7 @@ type OrderDetailInfoSplitInfo struct {
 	OutRequestNo string `json:"out_request_no,omitempty"` // 应用平台退款请求号
 	Amount       int    `json:"amount"`                   // 金额
 	SplitSeqNo   string `json:"split_seq_no"`             // 分账流水号
-	MemberIdNo   string `json:"member_id_no"`             // 分账会员编号
+	MemberNo     string `json:"member_id"`                // 分账会员编号
 	SplitTime    string `json:"split_time,omitempty"`     // 分账时间,格式 yyyy-MM-dd HH:mm:ss
 }
 
