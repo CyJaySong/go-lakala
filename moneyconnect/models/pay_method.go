@@ -43,7 +43,7 @@ type ConsumeParamsPayMethodByJSAPI struct {
 	TermBaseStation string                                     `json:"term_base_station"`         // 商户终端基站信息,必填,上送格式为:MNC移动网络号码(2)＋LAC位置区域码(5)+CID基站编号(8)其中LAC不满五位,或CID不满足8位的均左补空格,如:00+LAC:6361+CID:58130
 	TermLoc         string                                     `json:"term_loc"`                  // 商户终端地理位置,必填,格式:纬度/经度,+表示北纬、东经,-表示南纬、西经,精度最长支持小数点后9位,举例:+37.123456789/-121.123456789
 	HbFqNum         string                                     `json:"hb_fq_num,omitempty"`       // 支付宝花呗分期期数,需花呗分期时必填,3:3期,6:6期,12:12期支付宝花呗商家手续费承担比例,需花呗时必填,100:代表商家贴息,0:代表用户承担手续费支付宝花呗商家手续费承担比例
-	TimeoutExpress  string                                     `json:"timeout_express,omitempty"` // 交易有效时间(单位分),订单的有效时间,建议不超过15分钟,不传值则默认5分钟
+	TimeoutExpress  int                                        `json:"timeout_express,omitempty"` // 交易有效时间(单位分),订单的有效时间,建议不超过15分钟,不传值则默认5分钟
 }
 
 type ConsumeParamsPayMethodByJsapiGoodsDetail struct {
