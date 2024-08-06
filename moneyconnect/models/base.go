@@ -6,3 +6,7 @@ type BaseResponse[T any] struct {
 	Message   string `json:"message"`    // 错误信息;仅当status=error时有效
 	Result    T      `json:"result"`     // JSON Object类型的返回值
 }
+
+func (c *BaseResponse[any]) IsOk() bool {
+	return c.Status == "OK"
+}
